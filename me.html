@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booktopia</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <div id="contacts">
+        <h3>CONTACT US</h3>
+        <form id="contactform">
+            <label>User Name</label><br>
+            <input name="name" type="text" placeholder="user name" style="background-color: transparent;" id="name"
+                required><br><br>
+            <label>User Email</label><br>
+            <input name="Email" type="text" placeholder="Email address" style="background-color: transparent;" id="email" required>
+            <div><br>
+                <textarea name="message" placeholder="Your message here..." style="background-color: transparent;" id="" cols="100"
+                    rows="10"></textarea><br>
+                <button type="submit" onclick="submitFormData()" class="btn btn-primary">Submit
+                </button>
+           </div>
+        </div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
