@@ -1,10 +1,60 @@
 .navbar {
     margin-bottom: 50px;
     border-radius: 0;
-  }
+}
 .jumbotron {
     margin-bottom: 0;
-  }
+    background-image: url("../Images/library.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.jumbotron h1{
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 75px;
+  color: rgb(10, 34, 245);
+  font-weight: 800;
+}
+.btn{
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+.dropdown-menu a{
+  color: black;
+  text-decoration: none;
+  font-family: monospace;
+  font-weight: 500;
+  font-size: 16px;
+}
+.dropdown-menu a:hover{
+  background-color: rgb(27, 15, 139);
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
+}
+#categories{
+  position: relative;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(8, 24, 168);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 4px;
+}
+#myBtn:hover {
+  background-color: #555;
+}
 footer {
     background-color: #f2f2f2;
     padding: 25px;
