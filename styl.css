@@ -21,10 +21,10 @@ label{
 textarea{
     color: whitesmoke;
 }
- .panel-body:hover {
+ .panel-body:hover .image{
     opacity: 0.3;
   }
-  #grade1 :hover .hove{
+  .row  :hover .hove{
     opacity: 0.9;
   }
   .hove {
