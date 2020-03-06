@@ -11,9 +11,17 @@ Order.prototype.fullorder = function () {
 $(document).ready(function () {
   $("#grade1Cre").click(function () {
     event.preventDefault();
-    var inputtedNumber = parseInt($("quantity").val());
+    var inputtedNumber = 2;
     var selectedBookName = "Grade-1 CRE";
     var selectedBookPrice = parseInt($("#grade1Cre").val());
+    var newOrder = new Order(inputtedNumber, selectedBookPrice);
+    var tabledata = "<tr><td>" + inputtedNumber + "</td><td>" + selectedBookName + "</td><td>" + selectedBookPrice + "</td><td>" + newOrder.fullorder() + "</td></tr>";
+    $('tbody').append(tabledata);
+  });
+  $("#grade1Environ").click(function () {
+    var inputtedNumber =4
+    var selectedBookName = "Grade-1 ENVIRONMENAL STUDIES";
+    var selectedBookPrice = parseInt($("#grade1Environ").val());
     var newOrder = new Order(inputtedNumber, selectedBookPrice);
     var tabledata = "<tr><td>" + inputtedNumber + "</td><td>" + selectedBookName + "</td><td>" + selectedBookPrice + "</td><td>" + newOrder.fullorder() + "</td></tr>";
     $('tbody').append(tabledata);
@@ -803,5 +811,21 @@ $(document).ready(function () {
     var tabledata = "<tr><td>" + inputtedNumber + "</td><td>" + selectedBookName + "</td><td>" + selectedBookPrice + "</td><td>" + newOrder.fullorder() + "</td></tr>";
     $('tbody').append(tabledata);
   });
-
 });
+$(document).ready(function () {
+    $("#grade1Cre,#grade2Cre,#grade3cre,#class4Cre,#class5Cre,#class6Cre,#class7Cre,#class8Cre,#form1Cre,#form2Cre,#form3Cre,#form4Cre,#grade1Eng,#grade2Eng,#grade3Eng,#class4Eng,#class5Eng,#class6Eng,#class7Eng,#class8Eng,#form1Eng,#form2Eng,#form3Eng,#form4Eng,#grade1Kisw,#grade2Kisw,#grade3Kisw,#class4Kisw,#class5Kisw,#class6Kisw,#class7kisw,#class8Kisw,#form1Kisw,#form2Kisw,#form3Kisw,#form4Kisw,#grade1Maths,#grade2Maths,#grade3Maths,#class4Maths,#class5Maths,#class6Maths,#class7Maths,#class8Maths,#form1Maths,#form2Maths,#form3Maths,#form4Maths,#form1Bio,#form2Bio,#form3Bio,#form4Bio,#form1Agric,#form2agric,#form3Agric,#form4agric,#form1Bus,#form2Bus,#form3Bus,#form4Bus,#form1Chem,#form2Chem,#form3Chem,#form4Chem,#form1Comp,#form2Comp,#form3Comp,#form4Comp,#form1Geo,#form2Geo,#form3Geo,#form4Geo,#form1Hist,#form2Hist,#form3Hist,#form4Hist,#form1Phy,#form2Phy,#form3Phy,#form4Phy,#class4Scie,#class5Scie,#class6Scie,#class7Scie,#class8Scie,#class4Social,#class5Social,#class6Social,#class7Social,#class8Social,#grade1Mvmnt,#grade3Mvmnt,#grade1Environ,#grade2Environ,#grade3Environ,#grade1Hygiene,#grade2Hygiene,#grade3Arts").click(function () {
+        var theTotal = 0;
+        $("td:nth-child(4)").each(function () {
+            var val = parseInt($(this).text().replace(" ", "").replace(",-", ""));
+            if (!isNaN(val))
+            theTotal += parseInt(val);
+        });
+        $("#columnTotal").html('<td colspan="3">' + theTotal + '/= </td>');
+    });
+      $("button").click(function(){
+        $('#classModal').modal('show');
+    });
+});
+ 
+
+
