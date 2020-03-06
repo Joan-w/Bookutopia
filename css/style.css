@@ -8,7 +8,7 @@
     background-size: cover;
     background-attachment: fixed;
 }
-#quantity{
+.quantity,.quantity1,.quantity2,.quantity3,.quantity4,.quantity5,.quantity6,.quantity7,.quantity8,.quantity9{
   width: 50px;
 }
 .jumbotron h1{
@@ -58,7 +58,72 @@
 #myBtn:hover {
   background-color: #555;
 }
+#back{
+  background-image: url("../Images/libu.jpg");
+  width: 100%;
+  height: 650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+#blue{
+  margin-left: 20%;
+  padding: 20px;
+  background-color: black;
+  opacity: 0.7;
+  width: 700px;
+  height: 650px;
+  font-family: monospace;
+}
 footer {
     background-color: #f2f2f2;
     padding: 25px;
+}
+#contacts{
+  height: 670px;
+  background-image: url("../Images/contact.jpg");
+  background-size: cover;
+  display:inline-block;
+  text-align: center;
+  color: white;
+  width: 100%;
+}
+#contacts h1{
+  font-weight: 600;
+  color: white;
+}
+form{
+  height:400px;
+}
+input[type=text], textarea {
+  width: 50%;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: rgb(71, 3, 134);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#mebtn{
+  background-color: white;
+  padding: 10px;
+  border:none;
+  border-radius: 10px;
+}
+#mebtn:hover {
+  background-color: #45a049;
 }
