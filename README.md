@@ -31,7 +31,7 @@ The website allows for a customer to chose books according to the Kenyan cirricu
     violetmaina23@gmail.com
     mutusteve0@gmail.com
     wamuyujoan4@gmail.com
-    lawrenceiriri201@gmail.com
+    lawrenceireri201@gmail.com
 
 ### Licence    
 
