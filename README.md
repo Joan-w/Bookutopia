@@ -9,9 +9,9 @@
      Naika Esther
      Stephen Mutu
 
-## Desccirption
+## Description
 
-The website allows for a customer to chose books according to the Kenyan cirriculum and buy them online at the comfort of their homes.This will reduce and eventually remove long queues in bookshops during back to school period.
+The website allows for a customer to chose books according to the Kenyan curriculum and buy them online at the comfort of their homes.This will reduce and eventually remove long queues in bookshops during back to school period.
 
 ## Setup/Instalation Requirements 
     internet connection
