@@ -178,7 +178,7 @@ function Order(number, book) {
       var tabledata = "<tr><td>" + inputtedNumber + "</td><td>" + selectedBookName + "</td><td>" + selectedBookPrice + "</td><td>" + newOrder.fullorder() + "</td></tr>";
       $('tbody').append(tabledata);
     });
-    var$("#class4Cre").click(function () {
+    $("#class4Cre").click(function () {
       var inputtedNumber = parseInt($(".quantity").val());
       var selectedBookName = "Class-4 CRE";
       var selectedBookPrice = parseInt($("#class4Cre").val());
